@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(2, 2, 112);
+            font-size: 40px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .border {
+            border: 2px solid #fff;
+        }
+
+        .roulette-mat {
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        .mat-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .mat-table th,
+        .mat-table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .mat-table td {
+            width: 25%;
+        }
+
+        .mat-table td.red {
+            background-color: red;
+            border: 2px solid #fff;
+        }
+
+        .mat-table td.black {
+            background-color: black;
+            border: 2px solid #fff;
+        }
+
+        .mat-table td.zero {
+            background-color: rgb(0, 160, 0);
+            border: 2px solid #fff;
+        }
+
+        .mat-table td.sides {
+            border: 2px solid #fff;
+            font-size: 30px;
+            background-color: blue;
+        }
+
+        .rotate {
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            width: 1.5em;
+        }
+
+        .rotate div {
+            -moz-transform: rotate(90.0deg);
+            /* FF3.5+ */
+            -o-transform: rotate(90.0deg);
+            /* Opera 10.5 */
+            -webkit-transform: rotate(90.0deg);
+            /* Saf3.1+, Chrome */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+            /* IE6,IE7 */
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+            /* IE8 */
+            margin-left: -10em;
+            margin-right: -10em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="roulette-mat">
+        <table class="mat-table">
+            <tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="zero" colspan="3">0</td>
+            </tr>
+            <tr>
+                <td class="sides rotate" rowspan="4"><div>1-12</div></td>
+                <td class="red">1</td>
+                <td class="black">2</td>
+                <td class="red">3</td>
+            </tr>
+            <tr>
+                <td class="black">4</td>
+                <td class="red">5</td>
+                <td class="black">6</td>
+            </tr>
+            <tr>
+                <td class="red">7</td>
+                <td class="black">8</td>
+                <td class="red">9</td>
+            </tr>
+            <tr>
+                <td class="black">10</td>
+                <td class="black">11</td>
+                <td class="red">12</td>
+            </tr>
+            <tr>
+                <td class="sides rotate" rowspan="4"><div>13-24</div></td>
+                <td class="black">13</td>
+                <td class="red">14</td>
+                <td class="black">15</td>
+            </tr>
+            <tr>
+                <td class="red">16</td>
+                <td class="black">17</td>
+                <td class="red">18</td>
+            </tr>
+            <tr>
+                <td class="red">19</td>
+                <td class="black">20</td>
+                <td class="red">21</td>
+            </tr>
+            <tr>
+                <td class="black">22</td>
+                <td class="red">23</td>
+                <td class="black">24</td>
+            </tr>
+            <tr>
+                <td class="sides rotate" rowspan="4"><div>25-36</div></td>
+                <td class="red">25</td>
+                <td class="black">26</td>
+                <td class="red">27</td>
+            </tr>
+            <tr>
+                <td class="black">28</td>
+                <td class="black">29</td>
+                <td class="red">30</td>
+            </tr>
+            <tr>
+                <td class="black">31</td>
+                <td class="red">32</td>
+                <td class="black">33</td>
+            </tr>
+            <tr>
+                <td class="red">34</td>
+                <td class="black">35</td>
+                <td class="red">36</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
