@@ -33,7 +33,8 @@
         }
 
         .mat-table td {
-            width: 25%;
+            width: 90px;
+            height: 90px;
         }
 
         .mat-table td.red {
@@ -103,18 +104,24 @@
         }
 
         .solverde {
-            height: 100%;
-            width: 100%;
+            height: 80px;
+            width: 80px;
         }
     </style>
 
     <script type='application/javascript'>
+        var count = 0;
         function numberClicked(el) {
-            console.log(el);
+            console.log(el.id);
+            console.log(count);
 
             if (el.innerHTML === el.id) {
-                el.innerHTML="<img src=\"solverde.png\" class=\"solverde\" />";
+                if(count <= 7){
+                    count++;
+                    el.innerHTML="<img src=\"solverde.png\" class=\"solverde\" />";
+                }
             } else {
+                count--;
                 el.innerHTML = el.id;
             }
         }
@@ -125,6 +132,9 @@
                 element.innerHTML = element.id
             });
             document.querySelectorAll(".black").forEach(element => {
+                element.innerHTML = element.id
+            });
+            document.querySelectorAll(".zero").forEach(element => {
                 element.innerHTML = element.id
             });
         }
@@ -138,7 +148,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td class="zero" colspan="3">0</td>
+                <td class="zero" colspan="3" onclick="numberClicked(this);" id="0">0</td>
             </tr>
             <tr>
                 <td class="sides rotate" rowspan="4">
