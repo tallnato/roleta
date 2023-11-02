@@ -26,13 +26,8 @@
             border-collapse: collapse;
         }
 
-        .mat-table th,
         .mat-table td {
-            padding: 15px;
             text-align: center;
-        }
-
-        .mat-table td {
             width: 90px;
             height: 90px;
         }
@@ -93,7 +88,7 @@
         }
 
         .button {
-            display:block;
+            display: block;
             height: 180px;
             width: 180px;
             border-radius: 50%;
@@ -106,6 +101,9 @@
         .solverde {
             height: 80px;
             width: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 
@@ -116,9 +114,9 @@
             console.log(count);
 
             if (el.innerHTML === el.id) {
-                if(count <= 7){
+                if (count <= 7) {
                     count++;
-                    el.innerHTML="<img src=\"solverde.png\" class=\"solverde\" />";
+                    el.innerHTML = "<img src=\"solverde.png\" class=\"solverde\" />";
                 }
             } else {
                 count--;
@@ -221,7 +219,7 @@
             </tr>
         </table>
     </div>
-    <div class="container" >
+    <div class="container">
         <div class="btn-holder">
             <button class="button" onclick="clearNumbers(this);">Limpar</button>
         </div>
