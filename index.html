@@ -100,6 +100,11 @@
             background-color: #fbff00;
             border: 1px solid white;
         }
+
+        .solverde {
+            height: 100%;
+            width: 100%;
+        }
     </style>
 
     <script type='application/javascript'>
@@ -107,7 +112,7 @@
             console.log(el);
 
             if (el.innerHTML === el.id) {
-                el.innerHTML = "batatas";
+                el.innerHTML="<img src=\"solverde.png\" class=\"solverde\" />";
             } else {
                 el.innerHTML = el.id;
             }
