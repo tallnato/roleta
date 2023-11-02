@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Roleta</title>
     <style>
         body {
             background-color: rgb(2, 2, 112);
@@ -52,7 +53,7 @@
         .mat-table td.sides {
             border: 2px solid #fff;
             font-size: 30px;
-            background-color: blue;
+            background-color: #0000ff;
         }
 
         .rotate {
@@ -76,7 +77,52 @@
             margin-left: -10em;
             margin-right: -10em;
         }
+
+        .container {
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100vh;
+            display: flex;
+        }
+
+        .container .btn-holder {
+            justify-content: flex-start;
+            display: flex;
+        }
+
+        .button {
+            display:block;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            font-size: 25px;
+            margin: 10px;
+            background-color: #fbff00;
+            border: 1px solid white;
+        }
     </style>
+
+    <script type='application/javascript'>
+        function numberClicked(el) {
+            console.log(el);
+
+            if (el.innerHTML === el.id) {
+                el.innerHTML = "batatas";
+            } else {
+                el.innerHTML = el.id;
+            }
+        }
+
+        function clearNumbers(el) {
+            console.log("clear numbers");
+            document.querySelectorAll(".red").forEach(element => {
+                element.innerHTML = element.id
+            });
+            document.querySelectorAll(".black").forEach(element => {
+                element.innerHTML = element.id
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -89,70 +135,82 @@
                 <td class="zero" colspan="3">0</td>
             </tr>
             <tr>
-                <td class="sides rotate" rowspan="4"><div>1-12</div></td>
-                <td class="red">1</td>
-                <td class="black">2</td>
-                <td class="red">3</td>
+                <td class="sides rotate" rowspan="4">
+                    <div>1-12</div>
+                </td>
+                <td class="red" onclick="numberClicked(this);" id="1">1</td>
+                <td class="black" onclick="numberClicked(this);" id="2">2</td>
+                <td class="red" onclick="numberClicked(this);" id="3">3</td>
             </tr>
             <tr>
-                <td class="black">4</td>
-                <td class="red">5</td>
-                <td class="black">6</td>
+                <td class="black" onclick="numberClicked(this);" id="4">4</td>
+                <td class="red" onclick="numberClicked(this);" id="5">5</td>
+                <td class="black" onclick="numberClicked(this);" id="6">6</td>
             </tr>
             <tr>
-                <td class="red">7</td>
-                <td class="black">8</td>
-                <td class="red">9</td>
+                <td class="red" onclick="numberClicked(this);" id="7">7</td>
+                <td class="black" onclick="numberClicked(this);" id="8">8</td>
+                <td class="red" onclick="numberClicked(this);" id="9">9</td>
             </tr>
             <tr>
-                <td class="black">10</td>
-                <td class="black">11</td>
-                <td class="red">12</td>
+                <td class="black" onclick="numberClicked(this);" id="10">10</td>
+                <td class="black" onclick="numberClicked(this);" id="11">11</td>
+                <td class="red" onclick="numberClicked(this);" id="12">12</td>
             </tr>
             <tr>
-                <td class="sides rotate" rowspan="4"><div>13-24</div></td>
-                <td class="black">13</td>
-                <td class="red">14</td>
-                <td class="black">15</td>
+                <td class="sides rotate" rowspan="4">
+                    <div>13-24</div>
+                </td>
+                <td class="black" onclick="numberClicked(this);" id="13">13</td>
+                <td class="red" onclick="numberClicked(this);" id="14">14</td>
+                <td class="black" onclick="numberClicked(this);" id="15">15</td>
             </tr>
             <tr>
-                <td class="red">16</td>
-                <td class="black">17</td>
-                <td class="red">18</td>
+                <td class="red" onclick="numberClicked(this);" id="16">16</td>
+                <td class="black" onclick="numberClicked(this);" id="17">17</td>
+                <td class="red" onclick="numberClicked(this);" id="18">18</td>
             </tr>
             <tr>
-                <td class="red">19</td>
-                <td class="black">20</td>
-                <td class="red">21</td>
+                <td class="red" onclick="numberClicked(this);" id="19">19</td>
+                <td class="black" onclick="numberClicked(this);" id="20">20</td>
+                <td class="red" onclick="numberClicked(this);" id="21">21</td>
             </tr>
             <tr>
-                <td class="black">22</td>
-                <td class="red">23</td>
-                <td class="black">24</td>
+                <td class="black" onclick="numberClicked(this);" id="22">22</td>
+                <td class="red" onclick="numberClicked(this);" id="23">23</td>
+                <td class="black" onclick="numberClicked(this);" id="24">24</td>
             </tr>
             <tr>
-                <td class="sides rotate" rowspan="4"><div>25-36</div></td>
-                <td class="red">25</td>
-                <td class="black">26</td>
-                <td class="red">27</td>
+                <td class="sides rotate" rowspan="4">
+                    <div>25-36</div>
+                </td>
+                <td class="red" onclick="numberClicked(this);" id="25">25</td>
+                <td class="black" onclick="numberClicked(this);" id="26">26</td>
+                <td class="red" onclick="numberClicked(this);" id="27">27</td>
             </tr>
             <tr>
-                <td class="black">28</td>
-                <td class="black">29</td>
-                <td class="red">30</td>
+                <td class="black" onclick="numberClicked(this);" id="28">28</td>
+                <td class="black" onclick="numberClicked(this);" id="29">29</td>
+                <td class="red" onclick="numberClicked(this);" id="30">30</td>
             </tr>
             <tr>
-                <td class="black">31</td>
-                <td class="red">32</td>
-                <td class="black">33</td>
+                <td class="black" onclick="numberClicked(this);" id="31">31</td>
+                <td class="red" onclick="numberClicked(this);" id="32">32</td>
+                <td class="black" onclick="numberClicked(this);" id="33">33</td>
             </tr>
             <tr>
-                <td class="red">34</td>
-                <td class="black">35</td>
-                <td class="red">36</td>
+                <td class="red" onclick="numberClicked(this);" id="34">34</td>
+                <td class="black" onclick="numberClicked(this);" id="35">35</td>
+                <td class="red" onclick="numberClicked(this);" id="36">36</td>
             </tr>
         </table>
     </div>
+    <div class="container" >
+        <div class="btn-holder">
+            <button class="button" onclick="clearNumbers(this);">Limpar</button>
+        </div>
+    </div>
+
 </body>
 
 </html>
