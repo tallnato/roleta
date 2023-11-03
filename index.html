@@ -17,7 +17,7 @@
         }
 
         .roulette-mat {
-            width: 400px;
+            width: 1300px;
             margin: 50px auto;
         }
 
@@ -60,21 +60,6 @@
             width: 1.5em;
         }
 
-        .rotate div {
-            -moz-transform: rotate(90.0deg);
-            /* FF3.5+ */
-            -o-transform: rotate(90.0deg);
-            /* Opera 10.5 */
-            -webkit-transform: rotate(90.0deg);
-            /* Saf3.1+, Chrome */
-            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
-            /* IE6,IE7 */
-            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
-            /* IE8 */
-            margin-left: -10em;
-            margin-right: -10em;
-        }
-
         .container {
             justify-content: space-between;
             flex-direction: column;
@@ -89,8 +74,8 @@
 
         .button {
             display: block;
-            height: 180px;
-            width: 180px;
+            height: 120px;
+            width: 120px;
             border-radius: 50%;
             font-size: 25px;
             margin: 10px;
@@ -146,77 +131,62 @@
             <tr>
             </tr>
             <tr>
-                <td></td>
-                <td class="zero" colspan="3" onclick="numberClicked(this);" id="0">0</td>
-            </tr>
-            <tr>
-                <td class="sides rotate" rowspan="4">
-                    <div>1-12</div>
-                </td>
-                <td class="red" onclick="numberClicked(this);" id="1">1</td>
-                <td class="black" onclick="numberClicked(this);" id="2">2</td>
+                <td class="zero" rowspan="3" onclick="numberClicked(this);" id="0">0</td>
+
                 <td class="red" onclick="numberClicked(this);" id="3">3</td>
-            </tr>
-            <tr>
-                <td class="black" onclick="numberClicked(this);" id="4">4</td>
-                <td class="red" onclick="numberClicked(this);" id="5">5</td>
                 <td class="black" onclick="numberClicked(this);" id="6">6</td>
-            </tr>
-            <tr>
-                <td class="red" onclick="numberClicked(this);" id="7">7</td>
-                <td class="black" onclick="numberClicked(this);" id="8">8</td>
                 <td class="red" onclick="numberClicked(this);" id="9">9</td>
-            </tr>
-            <tr>
-                <td class="black" onclick="numberClicked(this);" id="10">10</td>
-                <td class="black" onclick="numberClicked(this);" id="11">11</td>
                 <td class="red" onclick="numberClicked(this);" id="12">12</td>
-            </tr>
-            <tr>
-                <td class="sides rotate" rowspan="4">
-                    <div>13-24</div>
-                </td>
-                <td class="black" onclick="numberClicked(this);" id="13">13</td>
-                <td class="red" onclick="numberClicked(this);" id="14">14</td>
+
                 <td class="black" onclick="numberClicked(this);" id="15">15</td>
-            </tr>
-            <tr>
-                <td class="red" onclick="numberClicked(this);" id="16">16</td>
-                <td class="black" onclick="numberClicked(this);" id="17">17</td>
                 <td class="red" onclick="numberClicked(this);" id="18">18</td>
-            </tr>
-            <tr>
-                <td class="red" onclick="numberClicked(this);" id="19">19</td>
-                <td class="black" onclick="numberClicked(this);" id="20">20</td>
                 <td class="red" onclick="numberClicked(this);" id="21">21</td>
-            </tr>
-            <tr>
-                <td class="black" onclick="numberClicked(this);" id="22">22</td>
-                <td class="red" onclick="numberClicked(this);" id="23">23</td>
                 <td class="black" onclick="numberClicked(this);" id="24">24</td>
-            </tr>
-            <tr>
-                <td class="sides rotate" rowspan="4">
-                    <div>25-36</div>
-                </td>
-                <td class="red" onclick="numberClicked(this);" id="25">25</td>
-                <td class="black" onclick="numberClicked(this);" id="26">26</td>
+
                 <td class="red" onclick="numberClicked(this);" id="27">27</td>
-            </tr>
-            <tr>
-                <td class="black" onclick="numberClicked(this);" id="28">28</td>
-                <td class="black" onclick="numberClicked(this);" id="29">29</td>
                 <td class="red" onclick="numberClicked(this);" id="30">30</td>
-            </tr>
-            <tr>
-                <td class="black" onclick="numberClicked(this);" id="31">31</td>
-                <td class="red" onclick="numberClicked(this);" id="32">32</td>
                 <td class="black" onclick="numberClicked(this);" id="33">33</td>
+                <td class="red" onclick="numberClicked(this);" id="36">36</td>
             </tr>
             <tr>
-                <td class="red" onclick="numberClicked(this);" id="34">34</td>
+                <td class="black" onclick="numberClicked(this);" id="2">2</td>
+                <td class="red" onclick="numberClicked(this);" id="5">5</td>
+                <td class="black" onclick="numberClicked(this);" id="8">8</td>
+                <td class="black" onclick="numberClicked(this);" id="11">11</td>
+
+                <td class="red" onclick="numberClicked(this);" id="14">14</td>
+                <td class="black" onclick="numberClicked(this);" id="17">17</td>
+                <td class="black" onclick="numberClicked(this);" id="20">20</td>
+                <td class="red" onclick="numberClicked(this);" id="23">23</td>
+
+                <td class="black" onclick="numberClicked(this);" id="26">26</td>
+                <td class="black" onclick="numberClicked(this);" id="29">29</td>
+                <td class="red" onclick="numberClicked(this);" id="32">32</td>
                 <td class="black" onclick="numberClicked(this);" id="35">35</td>
-                <td class="red" onclick="numberClicked(this);" id="36">36</td>
+            </tr>
+            <tr>
+                <td class="red" onclick="numberClicked(this);" id="1">1</td>
+                <td class="black" onclick="numberClicked(this);" id="4">4</td>
+                <td class="red" onclick="numberClicked(this);" id="7">7</td>
+                <td class="black" onclick="numberClicked(this);" id="10">10</td>
+
+                <td class="black" onclick="numberClicked(this);" id="13">13</td>
+                <td class="red" onclick="numberClicked(this);" id="16">16</td>
+                <td class="red" onclick="numberClicked(this);" id="19">19</td>
+                <td class="black" onclick="numberClicked(this);" id="22">22</td>
+
+                <td class="red" onclick="numberClicked(this);" id="25">25</td>
+                <td class="black" onclick="numberClicked(this);" id="28">28</td>
+                <td class="black" onclick="numberClicked(this);" id="31">31</td>
+                <td class="red" onclick="numberClicked(this);" id="34">34</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td class="sides" colspan="4">1-12</td>
+                <td class="sides" colspan="4">13-24</td>
+                <td class="sides" colspan="4">25-36</td>
             </tr>
         </table>
     </div>
