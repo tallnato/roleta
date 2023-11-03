@@ -143,6 +143,9 @@
             document.querySelectorAll(".zero").forEach(element => {
                 element.innerHTML = element.id
             });
+            document.querySelectorAll(".sides").forEach(element => {
+                element.innerHTML = element.id
+            });
         }
     </script>
 </head>
@@ -206,9 +209,9 @@
 
             <tr>
                 <td></td>
-                <td class="sides" colspan="4">1-12</td>
-                <td class="sides" colspan="4">13-24</td>
-                <td class="sides" colspan="4">25-36</td>
+                <td class="sides" colspan="4" onclick="numberClicked(this);" id="1-12">1-12</td>
+                <td class="sides" colspan="4" onclick="numberClicked(this);" id="13-24">13-24</td>
+                <td class="sides" colspan="4" onclick="numberClicked(this);" id="25-36">25-36</td>
             </tr>
         </table>
     </div>
